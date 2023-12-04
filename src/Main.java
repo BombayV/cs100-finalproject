@@ -49,7 +49,7 @@ public class Main {
     }
 
     private int findLargestNumInList(int[] numList) {
-        int largestNum = 0;
+        int largestNum = numList[0];
         for (int j : numList) {
             if (j > largestNum) {
                 largestNum = j;

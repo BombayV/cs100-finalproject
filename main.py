@@ -11,7 +11,7 @@ class Main:
         return False
 
   def find_largest_num_in_list(self, toFindList: list) -> int:
-    largest_num = 0
+    largest_num = toFindList[0]
     for num in toFindList:
       if num > largest_num:
         largest_num = num
