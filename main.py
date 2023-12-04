@@ -1,13 +1,13 @@
 class Main:
-  def find_fibonacci_int(self, n):
+  def find_fibonacci_int(self, toFindInt: int) -> bool:
     num1, num2, num3 = 0, 1, 0
     while True:
       num3 = num1 + num2
       num1 = num2
       num2 = num3
-      if num3 == n:
+      if num3 == toFindInt:
         return True
-      elif num3 > n:
+      elif num3 > toFindInt:
         return False
 
   def find_largest_num_in_list(self, toFindList: list) -> int:

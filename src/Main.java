@@ -9,9 +9,9 @@ public class Main {
         int toFindInt2 = 0;
         boolean fibonacciInt = main.findFibonacciInt(toFindInt);
         boolean fibonacciInt2 = main.findFibonacciInt(toFindInt2);
-        // toFindInt will return 1 since it is a fibonacci number
+        // toFindInt will return true since it is a fibonacci number
         System.out.println("Fibonacci 1: " + fibonacciInt);
-        // toFindInt2 will return -1 = not found
+        // toFindInt2 will return false = not found
         System.out.println("Not Fibonacci 2: " + fibonacciInt2);
 
         // Largest number in list
