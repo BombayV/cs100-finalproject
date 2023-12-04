@@ -7,8 +7,8 @@ public class Main {
         // Fibonacci
         int toFindInt = 1;
         int toFindInt2 = 0;
-        int fibonacciInt = main.findFibonacciInt(toFindInt);
-        int fibonacciInt2 = main.findFibonacciInt(toFindInt2);
+        boolean fibonacciInt = main.findFibonacciInt(toFindInt);
+        boolean fibonacciInt2 = main.findFibonacciInt(toFindInt2);
         // toFindInt will return 1 since it is a fibonacci number
         System.out.println("Fibonacci 1: " + fibonacciInt);
         // toFindInt2 will return -1 = not found
@@ -28,24 +28,24 @@ public class Main {
         System.out.println("Row and column processing: " + Arrays.deepToString(newMatrix));
     }
 
-    private int findFibonacciInt(int toFindInt) {
+    private boolean findFibonacciInt(int toFindInt) {
         int num1 = 0;
         int num2 = 1;
-        int num3 = -1;
+        int num3 = 0;
         for (int i = 0; i < toFindInt; i++) {
             num3 = num1 + num2;
             num1 = num2;
             num2 = num3;
             if (num3 == toFindInt) {
-                return num3;
+                return true;
             }
 
             if (num3 > toFindInt) {
-                return -1;
+                return false;
             }
         }
 
-        return -1;
+        return false;
     }
 
     private int findLargestNumInList(int[] numList) {

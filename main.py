@@ -6,10 +6,8 @@ class Main:
       num1 = num2
       num2 = num3
       if num3 == n:
-        print(f"Found Fibonacci number: {n}")
         return True
       elif num3 > n:
-        print(f"Did not find Fibonacci number: {n}")
         return False
 
   def find_largest_num_in_list(self, toFindList: list) -> int:
@@ -35,8 +33,8 @@ if __name__ == "__main__":
   # Fibonacci
   toFindInt: int = 1
   toFindInt2: int = 0
-  main.find_fibonacci_int(toFindInt)
-  main.find_fibonacci_int(toFindInt2)
+  print(f"Fibonacci {toFindInt}: {main.find_fibonacci_int(toFindInt)}")
+  print(f"Not Fibonacci {toFindInt2}: {main.find_fibonacci_int(toFindInt2)}")
 
   # Largest Number in List
   numList: list[int] = [1, 2, 3, 4, 5, 2, 4, 6, 1, 2, -1]
